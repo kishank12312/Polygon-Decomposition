@@ -15,3 +15,5 @@ We implement the algorithm to decompose a given polygon into convex polygons, fo
  - Run `visual.py` to visualize both of these outputs in order.
 
 The timing analysis (Time of execution vs Size of input polygon) is present in Timing Analysis.png
+
+Further analysis on select test cases now available in Report.html

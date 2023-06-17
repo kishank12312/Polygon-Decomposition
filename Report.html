@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAA Assignment</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#project-report">Project Report</a></li>
+<li><a href="#test-cases">Test Cases</a>
+<ul>
+<li><a href="#testcase---1">Testcase - 1</a></li>
+<li><a href="#testcase---2">Testcase - 2</a></li>
+<li><a href="#testcase---3">Testcase - 3</a></li>
+<li><a href="#testcase---4">Testcase - 4</a></li>
+<li><a href="#testcase---5">Testcase - 5</a></li>
+<li><a href="#timing-analysis">Timing analysis</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="project-report">Project Report</h1>
+<p>Group members:<br>
+1) Prithvi Hegde         2020A7PS1718H<br>
+2) Shashank Pandey   2020A7PS0238H<br>
+3) Kishan Koundinya  2020A7PS0213H</p>
+<h1 id="test-cases">Test Cases</h1>
+<h2 id="testcase---1">Testcase - 1</h2>
+<h3 id="star-dataset">Star Dataset</h3>
+<p>Size: 10 vertices<br>
+Number of polygons before merging: 5<br>
+Number of polygons after merging: 4</p>
+<h3 id="images">Images:</h3>
+<h4 id="polygon">Polygon</h4>
+<p><img src="https://people.sc.fsu.edu/~jburkardt/datasets/polygon/star.png" alt="enter image description here"></p>
+<h4 id="decomposed-dcel">Decomposed DCEL</h4>
+<p><img src="https://i.ibb.co/HVsdCH6/Star-DCEL.png" alt="enter image description here"></p>
+<h4 id="after-merging">After merging</h4>
+<p><img src="https://i.ibb.co/ZGkmH4r/Star-merged.png" alt="enter image description here"></p>
+<h2 id="testcase---2">Testcase - 2</h2>
+<h3 id="i-18-dataset">i-18 Dataset</h3>
+<p>Size: 18 vertices<br>
+Number of polygons before merging: 10<br>
+Number of polygons after merging: 9</p>
+<h3 id="images-1">Images:</h3>
+<h4 id="polygon-1">Polygon</h4>
+<p><img src="https://people.sc.fsu.edu/~jburkardt/datasets/polygon/i18.png" alt="enter image description here"></p>
+<h4 id="decomposed-dcel-1">Decomposed DCEL</h4>
+<p><img src="https://i.ibb.co/7pDBBSg/i-18-DCEL.png" alt="enter image description here"></p>
+<h4 id="after-merging-1">After merging</h4>
+<p><img src="https://i.ibb.co/80fgvDJ/i-18-merged.png" alt="enter image description here"></p>
+<h2 id="testcase---3">Testcase - 3</h2>
+<h3 id="hand-dataset">Hand Dataset</h3>
+<p>Size: 59 vertices<br>
+Number of polygons before merging: 25<br>
+Number of polygons after merging: 19</p>
+<h3 id="images-2">Images:</h3>
+<h4 id="polygon-2">Polygon</h4>
+<p><img src="https://people.sc.fsu.edu/~jburkardt/datasets/polygon/hand.png" alt="enter image description here"></p>
+<h4 id="decomposed-dcel-2">Decomposed DCEL</h4>
+<p><img src="https://i.ibb.co/VpZ9WtW/hand-DCEL.png" alt="enter image description here"></p>
+<h4 id="after-merging-2">After merging</h4>
+<p><img src="https://i.ibb.co/GnxYkbK/hand-merged.png" alt="enter image description here"></p>
+<h2 id="testcase---4">Testcase - 4</h2>
+<h3 id="india-dataset">India Dataset</h3>
+<p>Size: 135 vertices<br>
+Number of polygons before merging: 76<br>
+Number of polygons after merging: 53</p>
+<h3 id="images-3">Images:</h3>
+<h4 id="polygon-3">Polygon</h4>
+<p><img src="https://i.ibb.co/Rb5xmgL/India-poly.png" alt="enter image description here"></p>
+<h4 id="decomposed-dcel-3">Decomposed DCEL</h4>
+<p><img src="https://i.ibb.co/sVfxV9r/India-DCEL.png" alt="enter image description here"></p>
+<h4 id="after-merging-3">After merging</h4>
+<p><img src="https://i.ibb.co/zP6pGbT/India-merged.png" alt="enter image description here"></p>
+<h2 id="testcase---5">Testcase - 5</h2>
+<h3 id="canada-dataset">Canada Dataset</h3>
+<p>Size: 271 vertices<br>
+Number of polygons before merging: 141<br>
+Number of polygons after merging: 105</p>
+<h3 id="images-4">Images:</h3>
+<h4 id="polygon-4">Polygon</h4>
+<p><img src="https://i.ibb.co/m5h5X30/canada-poly.png" alt="enter image description here"></p>
+<h4 id="decomposed-dcel-4">Decomposed DCEL</h4>
+<p><img src="https://i.ibb.co/xSRpV57/canada-DCEL.png" alt="enter image description here"></p>
+<h4 id="after-merging-4">After merging</h4>
+<p><img src="https://i.ibb.co/PC2YyVJ/canada-merged.png" alt="enter image description here"></p>
+<h2 id="timing-analysis">Timing analysis</h2>
+<p>We can see, after experimentation with test-cases of differing edges and sizes, that as our input size increases, we find that the running time of our program also grows. This relationship makes sense, as we can understand that the time taken is exponentially proportional to our input size.</p>
+<p>We recorded the running time taken for polygons of varied sizes, from 5 to almost 300 vertices, and plotted it against the input size to get the following graph.</p>
+<p><img src="https://i.ibb.co/vh6vXZP/Time-Graph.png" alt="enter image description here"></p>
+<h3 id="data-for-graphing">Data for graphing</h3>
+<p>The data used to generate the graph is provided in tabular format below.</p>
+
+<table>
+<thead>
+<tr>
+<th>Polygon Name</th>
+<th>Size</th>
+<th>Polygons Before Merging</th>
+<th>Polygons After Merging</th>
+<th>Time Taken</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Star</td>
+<td>10</td>
+<td>5</td>
+<td>4</td>
+<td>0.034s</td>
+</tr>
+<tr>
+<td>I-18</td>
+<td>18</td>
+<td>10</td>
+<td>9</td>
+<td>0.019s</td>
+</tr>
+<tr>
+<td>Hand</td>
+<td>59</td>
+<td>25</td>
+<td>19</td>
+<td>0.030s</td>
+</tr>
+<tr>
+<td>Kazakhstan</td>
+<td>111</td>
+<td>58</td>
+<td>47</td>
+<td>0.067s</td>
+</tr>
+<tr>
+<td>India</td>
+<td>135</td>
+<td>76</td>
+<td>53</td>
+<td>0.099s</td>
+</tr>
+<tr>
+<td>Mexico</td>
+<td>169</td>
+<td>99</td>
+<td>73</td>
+<td>0.166s</td>
+</tr>
+<tr>
+<td>China</td>
+<td>229</td>
+<td>116</td>
+<td>82</td>
+<td>0.263s</td>
+</tr>
+<tr>
+<td>Canada</td>
+<td>271</td>
+<td>141</td>
+<td>105</td>
+<td>0.439s</td>
+</tr>
+</tbody>
+</table>
+    </div>
+  </div>
+</body>
+
+</html>
